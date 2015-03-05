@@ -1,0 +1,10 @@
+---
+- hosts: debian
+  remote_user: laurence
+  tasks:
+  - name: updates all debian lists
+    sudo: yes
+    command: apt-get update
+  - name: upgrade all debian packages
+    sudo: yes
+    command: apt-get upgrade
